@@ -87,9 +87,9 @@ public class ClubeCRUD {
             TreinadorCRUD.excluirPorClube(idClubeExclusao);
             ClubeLigaCRUD.excluirPorClube(idClubeExclusao);*/
             ps.setInt(1, idClubeExclusao);
-            int linhasAfetadas = ps.executeUpdate();
+            ResultSet rs = ps.executeQuery();
 
-            if ( linhasAfetadas == 0 ) {
+            if ( rs() == 0 ) {
                 throw new NoSuchElementException("Clube nao encontrado");
             }
             System.out.println("Clube deletado com sucesso.");

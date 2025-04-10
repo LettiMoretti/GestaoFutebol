@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.51">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.53">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1241,14 +1241,14 @@
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
     <column id="368" parent="363" name="idClube">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="369" parent="363" name="idLiga">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <foreign-key id="370" parent="363" name="tb_clubeliga_ibfk_1">
       <ColNames>idClube</ColNames>
@@ -1270,19 +1270,19 @@
     </index>
     <column id="374" parent="364" name="idClube">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="375" parent="364" name="nome">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="376" parent="364" name="dataFundacao">
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <index id="377" parent="364" name="PRIMARY">
       <ColNames>idClube</ColNames>
@@ -1296,29 +1296,29 @@
     </key>
     <column id="379" parent="365" name="idJogador">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="380" parent="365" name="nome">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="381" parent="365" name="idade">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="382" parent="365" name="idClube">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="383" parent="365" name="posicao">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <foreign-key id="384" parent="365" name="tb_jogadores_ibfk_1">
       <ColNames>idClube</ColNames>
@@ -1341,19 +1341,19 @@
     </key>
     <column id="388" parent="366" name="idLiga">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="389" parent="366" name="nome">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="390" parent="366" name="anoFundacao">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <index id="391" parent="366" name="PRIMARY">
       <ColNames>idLiga</ColNames>
@@ -1367,24 +1367,24 @@
     </key>
     <column id="393" parent="367" name="idTreinador">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="394" parent="367" name="nome">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="395" parent="367" name="experiencia">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <column id="396" parent="367" name="clube">
-      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>int(11)|0s</StoredType>
     </column>
     <foreign-key id="397" parent="367" name="clube">
       <ColNames>clube</ColNames>
